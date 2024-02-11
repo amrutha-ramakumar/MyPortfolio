@@ -11044,3 +11044,59 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+#portfolio .img-fluid{
+  width: 400px !important;
+  height: 250px !important;
+}
+/* #contact{
+  display: block;
+  align-items: center;
+  justify-content: center;
+} */
+#contact form{
+  margin-left: 200px;
+  line-height: 30px;
+}
+.form-label{
+  color: #4d5154;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding:5px 30px 5px 0px;
+}
+.form-input{
+  min-width: 300px;
+  border-style: none none solid none;
+  padding:10px 0px 10px 30px;
+  margin-left: 20px;
+}
+.form-input:focus{
+  outline: none;
+}
+.form-text{
+  min-width: 300px;
+  border-style: none none solid none;
+  padding:10px 0px 10px 30px;
+  border-bottom: 2px solid;
+}
+form input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+.form-text:focus{
+  outline: none;
+}
+.form-submit{
+   border: none;
+   background-color: #1abc9c;
+   color: white;
+  margin-left: 150px;
+  margin-top: 5px;
+}
+form .name{
+  margin-left: 22px;
+}
+form .email{
+  margin-left: 25px;
+}
