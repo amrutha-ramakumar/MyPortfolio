@@ -242,16 +242,20 @@
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
-                        <form action="https://api.web3forms.com/submit" method="POST" >
+                        <form action="https://api.web3forms.com/submit" method="POST" id="signup-form" >
                             <input type="hidden" name="access_key" value="15820419-4b63-45c8-a7e8-856120cba28b">
                             <label class="form-label " for="name">Name</label>
-                            <input class="form-input name" type="text" id="name" name="name"  required><br>
+                            <input class="form-input name form-control" type="text" onkeyup="validateName()" id="name" name="name"  >
+                            <span id="nameError"></span><br>
                             <label class="form-label" for="email">Email</label>
-                            <input class="form-input email" id="email" type="email" name="email" required><br>
+                            <input class="form-input form-control email" id="email" onkeyup="validateEmail()" type="email" name="email" >
+                            <span id="emailError"></span><br>
                             <label class="form-label" for="phone">Phone</label>
-                            <input class="form-input " id="phone"  type="number" name="phone" required><br>
+                            <input class="form-input form-control" id="phone" onkeyup="validatePhone()" type="number" name="phone" >
+                            <span id="phoneError"></span><br>
                             <label class="form-label" for="message">Message</label>
-                            <textarea class="form-text" id="message" name="message" required></textarea><br>
+                            <textarea class="form-text form-control" onkeyup="validateMessage()" id="message" name="message" ></textarea>
+                            <span id="messageError"></span><br>
                             <button type="submit" class="form-submit">Submit</button>
                         </form>
                     </div>
